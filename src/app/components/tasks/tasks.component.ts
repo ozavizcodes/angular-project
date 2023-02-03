@@ -17,8 +17,7 @@ export class TasksComponent implements OnInit {
   constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {
-    //you could do it this way or do it with the use of observables;
-  //  this.tasks =  this.taskService.getTasks()
+    
   this.taskService.getTasks().subscribe((tasks)=> this.tasks = tasks)
 
   }
@@ -30,11 +29,18 @@ export class TasksComponent implements OnInit {
         () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
       );
   }
+  //toggle states
   toggleReminder(task: Task) {
     task.reminder = !task.reminder;
     // console.log(task.reminder);
     this.taskService.updateTaskReminder(task).subscribe()
     
+  }
+  addTask(task: Task) {
+    console.log(task);
+    this.taskService.addTask(task).subscribe((task)=> (this.tasks.push(task)))
+    
+
   }
 
 }

@@ -23,6 +23,18 @@
       "text": "Test at hospital",
       "day": "May 12th at 12pm",
       "reminder": true
+    },
+    {
+      "text": "Testing Microphone",
+      "day": "Tuesday 7pm",
+      "reminder": true,
+      "id": 5
+    },
+    {
+      "text": "go to the market for foodstuffs",
+      "day": "monday 15th 5pm",
+      "reminder": false,
+      "id": 6
     }
   ]
 }
