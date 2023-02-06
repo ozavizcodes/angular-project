@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "text": "Doctors Appointment",
-      "day": "May 5th at 6pm",
-      "reminder": true
-    },
-    {
       "id": 2,
       "text": "Meeting at Schoold",
       "day": "June 7 at 2:30pm",
@@ -25,16 +19,16 @@
       "reminder": true
     },
     {
-      "text": "Testing Microphone",
-      "day": "Tuesday 7pm",
-      "reminder": true,
-      "id": 5
-    },
-    {
       "text": "go to the market for foodstuffs",
       "day": "monday 15th 5pm",
       "reminder": false,
       "id": 6
+    },
+    {
+      "text": "Hair Appointment",
+      "day": "Monday 12th at 5:20pm",
+      "reminder": true,
+      "id": 7
     }
   ]
 }
